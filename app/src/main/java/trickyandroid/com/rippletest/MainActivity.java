@@ -7,8 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Space;
+import android.widget.TextView;
 
 
 public class MainActivity extends Activity implements View.OnTouchListener {
@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         for (int i = 0; i < MAX_BUTTONS; i++) {
             ViewGroup buttonHost = (ViewGroup) getLayoutInflater().inflate(R.layout.circular_button_layout, buttonsContainer, false);
             TextView button = (TextView) buttonHost.getChildAt(0);
-            buttonHost.setOutline(circularOutline);
+//            buttonHost.setOutline(circularOutline);
 
             button.setText("Test " + i);
 

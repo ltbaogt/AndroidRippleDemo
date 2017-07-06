@@ -1,19 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'android-L'
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "trickyandroid.com.rippletest"
-        minSdkVersion 'L'
-        targetSdkVersion 'L'
+        minSdkVersion 21
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
-            runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
